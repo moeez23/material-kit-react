@@ -14,6 +14,7 @@
   </body>
 
 
+
 <script type='text/javascript'>
 var ChatAPI = ChatAPI || {};
 (function (t) {
@@ -31,21 +32,22 @@ var ChatAPI = ChatAPI || {};
     }
     t.chat_buttons = t.chat_buttons || [];
 
-    t.site_id = '56'; 
-    t.license_id ='6cfc911d-e13f-4377-acfc-b36e4c93106f'; 
+    t.site_id = '6'; 
+    t.license_id ='3831d356-0ee5-4430-a4bb-697eef4e49fd'; 
     t.main_code_plan = t.license_id;
 
     t.chat_buttons.push({ code_plan: t.license_id, div_id: 'chat-button-' + t.license_id });
 
-    loadScript('https://api-nowchat.abark.com.pk/api/v1/saas-services/generic/get-chat-bot-script?siteId=');
+    loadScript('https://api-nowchat.nowch.at/api/v1/saas-services/generic/get-chat-bot-script?siteId=');
 
     setTimeout(function () {
         if (!t.loaded) {
-            loadScript('https://api-nowchat.abark.com.pk/api/v1/saas-services/generic/get-chat-bot-script?siteId=');
+            loadScript('https://api-nowchat.nowch.at/api/v1/saas-services/generic/get-chat-bot-script?siteId=');
         }
     }, 5000);
 })(ChatAPI || {});
 </script>
+
 
 
 
