@@ -13,34 +13,25 @@
     <script type="module" src="/src/main.tsx"></script>
   </body>
 
-
-
-
 <script type='text/javascript'>
 var ChatAPI = ChatAPI || {};
 (function (t) {
     t.loaded = false;
-
     function loadScript(url) {
         var script = document.createElement('script');
         var firstScript = document.getElementsByTagName('script')[0];
         script.type = 'text/javascript';
         script.async = true;
-      
         script.src = url+ t.site_id+ '&licenseId=' + t.license_id;
         script.onload = function () { t.loaded = true; };
         firstScript.parentNode.insertBefore(script, firstScript);
     }
     t.chat_buttons = t.chat_buttons || [];
-
-    t.site_id = '10'; 
-    t.license_id ='ff6d4219-bca5-4266-86ee-47b7874a69d3'; 
+    t.site_id = '11';
+    t.license_id ='5c759639-3b61-4f9e-a386-08696f0e5227';
     t.main_code_plan = t.license_id;
-
     t.chat_buttons.push({ code_plan: t.license_id, div_id: 'chat-button-' + t.license_id });
-
     loadScript('https://api-nowchat.nowch.at/api/v1/saas-services/generic/get-chat-bot-script?siteId=');
-
     setTimeout(function () {
         if (!t.loaded) {
             loadScript('https://api-nowchat.nowch.at/api/v1/saas-services/generic/get-chat-bot-script?siteId=');
