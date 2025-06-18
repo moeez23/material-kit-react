@@ -13,36 +13,28 @@
     <script type="module" src="/src/main.tsx"></script>
   </body>
 
-
-
-      <script type='text/javascript'>
+<script type='text/javascript'>
       var ChatAPI = ChatAPI || {};
       (function (t) {
           t.loaded = false;
-
           function loadScript(url) {
               var script = document.createElement('script');
               var firstScript = document.getElementsByTagName('script')[0];
               script.type = 'text/javascript';
               script.async = true;
-            
               script.src = url+ t.site_id+ '&licenseId=' + t.license_id;
               script.onload = function () { t.loaded = true; };
               firstScript.parentNode.insertBefore(script, firstScript);
           }
           t.chat_buttons = t.chat_buttons || [];
-
-          t.site_id = '21'; 
-          t.license_id ='b4ef1b9b-101c-4848-b704-893743da4fda'; 
+          t.site_id = '62';
+          t.license_id ='67285905-8abb-4d6c-ae3e-8c65cdc4e893';
           t.main_code_plan = t.license_id;
-
           t.chat_buttons.push({ code_plan: t.license_id, div_id: 'chat-button-' + t.license_id });
-
-          loadScript('https://api-nowchat.nowch.at/api/v1/saas-services/generic/get-chat-bot-script?siteId=');
-
+          loadScript('https://api-nowchat.abark.com.pk/api/v1/saas-services/generic/get-chat-bot-script?siteId=');
           setTimeout(function () {
               if (!t.loaded) {
-                  loadScript('https://api-nowchat.nowch.at/api/v1/saas-services/generic/get-chat-bot-script?siteId=');
+                  loadScript('https://api-nowchat.abark.com.pk/api/v1/saas-services/generic/get-chat-bot-script?siteId=');
               }
           }, 5000);
       })(ChatAPI || {});
