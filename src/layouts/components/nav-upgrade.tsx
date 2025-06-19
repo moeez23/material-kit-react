@@ -55,7 +55,7 @@ export function NavUpgrade({ sx, ...other }: StackProps) {
         // href="https://material-ui.com/store/items/minimal-dashboard/"
         // target="_blank"
         // variant="contained"
-        onClick={()=>window.openChatWithExternalBtn()}
+        onClick={window.openChatWithExternalBtn}
         color="inherit"
       >
         Upgrade to Pro
