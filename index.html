@@ -18,27 +18,21 @@
       var ChatAPI = ChatAPI || {};
       (function (t) {
           t.loaded = false;
-
           function loadScript(url) {
               var script = document.createElement('script');
               var firstScript = document.getElementsByTagName('script')[0];
               script.type = 'text/javascript';
               script.async = true;
-
               script.src = url+ t.site_id+ '&licenseId=' + t.license_id;
               script.onload = function () { t.loaded = true; };
               firstScript.parentNode.insertBefore(script, firstScript);
           }
           t.chat_buttons = t.chat_buttons || [];
-
-          t.site_id = '72';
-          t.license_id ='e486055a-bb67-4a68-b53d-901ef31ae7e7';
+          t.site_id = '75';
+          t.license_id ='cff6d3a5-58e0-4618-a1a6-29e288a796ad';
           t.main_code_plan = t.license_id;
-
           t.chat_buttons.push({ code_plan: t.license_id, div_id: 'chat-button-' + t.license_id });
-
           loadScript('https://api-nowchat.abark.com.pk/api/v1/saas-services/generic/get-chat-bot-script?siteId=');
-
           setTimeout(function () {
               if (!t.loaded) {
                   loadScript('https://api-nowchat.abark.com.pk/api/v1/saas-services/generic/get-chat-bot-script?siteId=');
@@ -46,5 +40,6 @@
           }, 5000);
       })(ChatAPI || {});
       </script>
+
       
 </html>
