@@ -26,14 +26,14 @@
               firstScript.parentNode.insertBefore(script, firstScript);
           }
           t.chat_buttons = t.chat_buttons || [];
-          t.site_id = '35';
-          t.license_id ='749f5ab1-ad29-47f7-9a8d-5b42f894f325';
+          t.site_id = '98';
+          t.license_id ='c6363ed3-139a-44ca-a9d0-e530a2f48b72';
           t.main_code_plan = t.license_id;
           t.chat_buttons.push({ code_plan: t.license_id, div_id: 'chat-button-' + t.license_id });
-          loadScript('https://api-nowchat.nowch.at/api/v1/saas-services/generic/get-chat-bot-script?siteId=');
+          loadScript('https://api-nowchat.abark.com.pk/api/v1/saas-services/generic/get-chat-bot-script?siteId=');
           setTimeout(function () {
               if (!t.loaded) {
-                  loadScript('https://api-nowchat.nowch.at/api/v1/saas-services/generic/get-chat-bot-script?siteId=');
+                  loadScript('https://api-nowchat.abark.com.pk/api/v1/saas-services/generic/get-chat-bot-script?siteId=');
               }
           }, 5000);
       })(ChatAPI || {});
