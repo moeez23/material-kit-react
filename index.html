@@ -12,7 +12,8 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
-<script type='text/javascript'>
+
+  <script type='text/javascript'>
       var ChatAPI = ChatAPI || {};
       (function (t) {
           t.loaded = false;
@@ -26,14 +27,14 @@
               firstScript.parentNode.insertBefore(script, firstScript);
           }
           t.chat_buttons = t.chat_buttons || [];
-          t.site_id = '98';
-          t.license_id ='c6363ed3-139a-44ca-a9d0-e530a2f48b72';
+          t.site_id = '1';
+          t.license_id ='cc24701a-fea3-449f-bd49-60c7cceada0c';
           t.main_code_plan = t.license_id;
           t.chat_buttons.push({ code_plan: t.license_id, div_id: 'chat-button-' + t.license_id });
-          loadScript('https://api-nowchat.abark.com.pk/api/v1/saas-services/generic/get-chat-bot-script?siteId=');
+          loadScript('https://api-nowchat.nowchat.io/api/v1/saas-services/generic/get-chat-bot-script?siteId=');
           setTimeout(function () {
               if (!t.loaded) {
-                  loadScript('https://api-nowchat.abark.com.pk/api/v1/saas-services/generic/get-chat-bot-script?siteId=');
+                  loadScript('https://api-nowchat.nowchat.io/api/v1/saas-services/generic/get-chat-bot-script?siteId=');
               }
           }, 5000);
       })(ChatAPI || {});
